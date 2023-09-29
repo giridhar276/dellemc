@@ -79,5 +79,216 @@ if-elif-elif-elif..else
 
 
 
+builtin functions      in the console   dir(__builtin__)
+---------------
+
+print()
+input()
+len()
+type()
+isinstance()
+dir()
+help()
+range()
+max()
+min()
+sum()
+
+list()
+str()
+tuple()
+dict()
+set()
+float()
+
+
+userdefined function | definition | block|subroutine|submodule|methods
+-----------------------------------------------------------
+-- code resusability
+
+
+different ways of passing arguments
+------------------
+
+fixed arguments
+default arguments
+keyword arguments
+variable length arguments
+
+
+
+lambda function | nameless function | anonymous function
+--------------------------------------------
+lambda is the replacement of single liner function ONLY
+Instead of defining single liner function we can call lambda function.
+Advantage: function body is replaced in the function call directly
+
+syntax: 
+functionname = lambda variables : expression
+
+example:
+display = lambda x,y: x + y
+
+file handling
+------------
+
+flat files ( csv log  txt prop conf xml json )
+third party files ( xlsx pdf mp4 docx pptx  zip rar 7z ..... )
+
+working with flat files
+-----------------------
+read mode    r
+write mode   w
+append mode  a
+
+
+opening the file
+-------------------
+syntax:   object = open(filename,mode)        # read mode
+             fr  = open('customers.txt','r')
+
+             fw  = open('customers.txt','w')   # write mode
+             case1: If the file is already existing , it overwrites
+             case2: if the file is not existing , file will be created
+
+             fa  = open('customers.txt','a')   # append mode
+             case1: If the file is already existing , it appends the conte
+             case2:if the file is not existing , file will be created
+
+closing the file
+----------------
+fr.close()
+
+
+
+
+
+
+read operation
+-------------
+
+- reading the file line by line using file object
+- fobj.readlines()      ----> will return the list
+- fobj.read()           ----> will return the string
+- using csv library fo csv files ( json library for json files)
+- using pandas library
+
+
+exception handling
+------------------
+There are 2 types of errors
+
+-syntax error
+-semantic error or runtime error
+
+Handling the errors that occurs during the runtime is known as exception handling.
+
+try
+except
+else
+finally
+
+
+library | module | package 
+--------------------------
+Every library contains methods
+
+There are 2 types of libraries
+
+
+- builtin libraries
+-------------------
+Builtin libraries are installed with python
+anaconda python contains 8000+ which are generally used and also used in analytics
+
+- third party libraries
+------------------------
+Depending on the requirement ( cloud  ML testautomation imageprocessing database NLP IOT ... ) developer has install the third party library from
+
+- pip tool
+- downloading and installing it manually from www.pypi.org
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+display all existing databases
+------------------------------
+show databases ;
+
+creating database
+-------------------
+create database dellemc;
+
+access your database
+--------------------
+use dellemc;
+
+create table
+------------
+create table adultinfo ( workclass varchar(100) , occupation varchar(100),education varchar(100) );
+
+inserting records
+----------------
+insert into adultinfo values('public','engineer','btech');
+ 
+dipslay all the records
+-----------------------
+select * from adultinfo
+
+describe table
+--------------------
+desc adultinfo;
+
+step1 :  establish the connection
+step2 :  define query
+step3 :  execute query
+step4 :  fetch the output
+step5 :  close the connection
+
+
+re  - to search for the patterns
+----
+regular expression   ( re in python = grep + awk + sed in linux )
+
+
+re.search
+re.match
+re.findall
+re.sub
+re.split
+
+metacharacters or wildcard characters
+----------------------------------
+^  $  +   *   ?   ()  [] {} \d \s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
